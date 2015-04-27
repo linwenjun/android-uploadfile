@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void uploadFile() {
-        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        Intent i = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(i, 1);
     }
 
